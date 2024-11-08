@@ -1,11 +1,18 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding:0px;
+}
+main {
+    top: 0;
 }
 html, body {
     height: 100%;  
     line-height: 1.5;      
-    background-color: #f9f9f9;
     font-size: 20px;
+}
+.cont {
+    padding-inline: 100px;
 }
 
 nav {
@@ -26,9 +33,134 @@ button {
     border-radius: 20px;
     padding: 10px;
 }
-.logo {
-    color:blue;
-    font-size: 50px;
+.logo img{
+    width: 200px;
+    height:100px;
+    
+}
+.first-section {
+    background: url(images/1eceb566.jpeg);
+    background-size: cover;         
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 80vh; 
+    display: flex; 
+    color: white;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.first-section p{
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 200px;
+
+}
+.search-bar {
+    width: 90%;
+    height:60px;
+    background-color: azure;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+.search-bar p {
+    margin: 0px;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.location {
+    display: flex;
+    border-style: solid;
+    border-color:white;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+.travellers {  
+    display: flex;
+}
+.location img {
+    width: 60px;
+    height: 20px;
+}
+.date {
+    border-style: solid;
+    border-color:grey;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.card {
+    /* display: flex; */
+    width: 350px;             /* Set the width of the card */
+    border: 1px solid #ddd;   /* Light border around the card */
+    border-radius: 10px;      /* Rounded corners */
+    overflow: hidden;         /* Clip the image to the border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center;       /* Center-align the text */
+    background-color: white;  /* Background color for the card */
+    margin: 10px;             /* Add space around the card */
 }
 
+.card img {
+    width: 100%;              /* Make the image fill the card width */
+    height: auto;             /* Maintain the image's aspect ratio */
+}
 
+.card p {
+    margin: 10px 0;           /* Add space around the text */
+    font-size: 16px;          /* Font size for the text */
+    font-weight: bold;        /* Make the text bold */
+    color: #333;              /* Dark text color */
+}
+.second-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel {
+    font-size: 40px;
+    margin-top: 100px;
+}
+/*This is the second section*/
+.card-container {
+    display: flex;
+    gap: 20px;                /* Space between cards */
+    padding: 20px;
+    justify-content: center;  /* Center the cards */
+}
+
+.accomodation {
+    width: 350px;             /* Set a fixed width for each card */
+    border-radius: 15px;      /* Rounded corners */
+    overflow: hidden;         /* Clip the content within rounded corners */
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.accomodation img {
+    width: 100%;              /* Full width of the card */
+    height: 250px;            /* Fixed height for the images */
+    object-fit: cover;        /* Cover the card area without stretching */
+}
+
+.accomodation p {
+    margin: 0;                /* Remove default margin */
+    padding: 10px;            /* Padding around the text */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;             /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: relative;
+    bottom: 50px;             /* Move the text up over the image */
+    text-align: left;         /* Align text to the left */
+    padding-left: 10px;       /* Add left padding for text */
+}
