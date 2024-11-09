@@ -83,6 +83,7 @@ button {
     padding: 20px;
     margin-top: -10px;
     border-radius: 10px;
+    border-width: 5px;
 }
 .travellers {  
     display: flex;
@@ -96,4 +97,40 @@ button {
     border-color:grey;
     border-radius: 10px;
     padding: 10px 20px;
+    border-width: 5px;
 }
+/* Second section of cards */
+.first-cards {
+    display: flex;
+    gap: 55px;
+    flex-wrap: wrap;
+    flex-direction: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    padding: 10px;
+    font-size: 16px;
+    color: #2e2e2e;
+    font-weight: bold;
+  }
+  .travel {
+    margin-top: 100px;
+    font-size: 30px;
+  }
